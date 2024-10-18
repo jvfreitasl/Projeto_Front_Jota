@@ -1,22 +1,23 @@
+import Logo from "../assets/VectorFooter.png";
+
 const Footer = () => {
   return (
     <>
       <footer style={{ backgroundColor: "#1F1F1F" }} className="w-full">
-        <section className="flex justify-content-center text-white w-full">
-          <div id="school" className="w-2 m-2">
-            <h2>Digital Store</h2>
-            {/* <img
-              src="Digital_Store/src/assets/VectorFooter.png"
-              alt="Digital Logo White"
-            /> */}
+        <section className="flex justify-content-evenly text-white w-full">
+          <div id="school" className="p-3 w-2 m-2">
+            <div className="flex align-items-center pl-2">
+              <img style={{ height: '22px', width: '22px' }} src={Logo} alt="Digital Logo White" />
+              <h2 className="m-1">Digital Store</h2>
+            </div>
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              fugit dolorem soluta? Veniam ex vero molestias.
+              fugit dolorem soluta?
             </p>
           </div>
-          <div id="map" className="flex-column m-2 w-2">
+          <div id="map" className="flex-column m-2">
             <h3>Informação</h3>
-            <ul className="list-none">
+            <ul className="list-none pl-0 flex-column">
               <li>Sobre Drip Store</li>
               <li>Segurança</li>
               <li>Wishlist</li>
@@ -25,9 +26,9 @@ const Footer = () => {
               <li>Meus Pedidos</li>
             </ul>
           </div>
-          <div id="category" className="w-2 m-2">
+          <div id="category" className="flex-column m-2">
             <h3 className="">Categorias</h3>
-            <ul className="list-none">
+            <ul className="list-none pl-0">
               <li>Camisetas</li>
               <li>Calças</li>
               <li>Bonés</li>
@@ -38,7 +39,8 @@ const Footer = () => {
           <div id="contact" className="w-2 m-2">
             <h3>Contato</h3>
             <p>
-              <a className="text-white no-underline"
+              <a
+                className="text-white no-underline"
                 target="_blank"
                 href="https://www.google.com/maps/place/Av.+Santos+Dumont,+1510+-+1+andar+-+Aldeota,+Fortaleza+-+CE,+60150-161/@-3.7326781,-38.5104072,17z/data=!3m1!4b1!4m6!3m5!1s0x7c7485edb300001:0x6782b2efe8bc747b!8m2!3d-3.7326781!4d-38.5104072!16s%2Fg%2F11smbsmkvz?entry=ttu&g_ep=EgoyMDI0MTAxNS4wIKXMDSoASAFQAw%3D%3D"
               >
