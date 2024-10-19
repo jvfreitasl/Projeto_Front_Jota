@@ -14,7 +14,7 @@ const Footer = () => {
               />
               <h2 className="m-1">Digital Store</h2>
             </div>
-            <p className="mt-5 text-sm">
+            <p className="mt-4 text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               fugit dolorem soluta?
             </p>
@@ -27,22 +27,22 @@ const Footer = () => {
           <div id="map" className="flex-column m-4">
             <h3>Informação</h3>
             <ul className="list-none pl-0 flex-column">
-              <li className="mb-3">Sobre Drip Store</li>
-              <li className="mb-3">Segurança</li>
-              <li className="mb-3">Wishlist</li>
-              <li className="mb-3">Blog</li>
-              <li className="mb-3">Trabalhe conosco</li>
-              <li className="mb-3">Meus Pedidos</li>
+              <li className="mb-3 cursor-pointer">Sobre Drip Store</li>
+              <li className="mb-3 cursor-pointer">Segurança</li>
+              <li className="mb-3 cursor-pointer">Wishlist</li>
+              <li className="mb-3 cursor-pointer">Blog</li>
+              <li className="mb-3 cursor-pointer">Trabalhe conosco</li>
+              <li className="mb-3 cursor-pointer">Meus Pedidos</li>
             </ul>
           </div>
           <div id="category" className="flex-column m-4">
             <h3 className="">Categorias</h3>
             <ul className="list-none pl-0">
-              <li className="mb-3">Camisetas</li>
-              <li className="mb-3">Calças</li>
-              <li className="mb-3">Bonés</li>
-              <li className="mb-3">Headphones</li>
-              <li className="mb-3">Tênis</li>
+              <li className="mb-3 cursor-pointer">Camisetas</li>
+              <li className="mb-3 cursor-pointer">Calças</li>
+              <li className="mb-3 cursor-pointer">Bonés</li>
+              <li className="mb-3 cursor-pointer">Headphones</li>
+              <li className="mb-3 cursor-pointer">Tênis</li>
             </ul>
           </div>
           <div id="contact" className="w-2 m-4">
@@ -62,7 +62,7 @@ const Footer = () => {
         </section>
         <div
           style={{ height: "1px", opacity: 0.3 }}
-          className="mx-6 mb-0 bg-white"
+          className="mx-8 mb-0 bg-white"
         ></div>
         <p className="text-white text-center p-5 m-0">© 2022 Digital College</p>
       </footer>
