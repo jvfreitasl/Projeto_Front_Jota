@@ -5,38 +5,47 @@ const Footer = () => {
     <>
       <footer style={{ backgroundColor: "#1F1F1F" }} className="w-full">
         <section className="flex justify-content-evenly text-white w-full">
-          <div id="school" className="p-3 w-2 m-2">
+          <div id="school" className="p-3 w-2 m-4">
             <div className="flex align-items-center pl-2">
-              <img style={{ height: '22px', width: '22px' }} src={Logo} alt="Digital Logo White" />
+              <img
+                style={{ height: "22px", width: "22px" }}
+                src={Logo}
+                alt="Digital Logo White"
+              />
               <h2 className="m-1">Digital Store</h2>
             </div>
-            <p className="">
+            <p className="mt-5 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               fugit dolorem soluta?
             </p>
+            <div className="mt-5">
+              <i className="pi pi-facebook mr-5 cursor-pointer"></i>
+              <i className="pi pi-instagram mr-5 cursor-pointer"></i>
+              <i className="pi pi-twitter cursor-pointer"></i>
+            </div>
           </div>
-          <div id="map" className="flex-column m-2">
+          <div id="map" className="flex-column m-4">
             <h3>Informação</h3>
             <ul className="list-none pl-0 flex-column">
-              <li>Sobre Drip Store</li>
-              <li>Segurança</li>
-              <li>Wishlist</li>
-              <li>Blog</li>
-              <li>Trabalhe conosco</li>
-              <li>Meus Pedidos</li>
+              <li className="mb-3">Sobre Drip Store</li>
+              <li className="mb-3">Segurança</li>
+              <li className="mb-3">Wishlist</li>
+              <li className="mb-3">Blog</li>
+              <li className="mb-3">Trabalhe conosco</li>
+              <li className="mb-3">Meus Pedidos</li>
             </ul>
           </div>
-          <div id="category" className="flex-column m-2">
+          <div id="category" className="flex-column m-4">
             <h3 className="">Categorias</h3>
             <ul className="list-none pl-0">
-              <li>Camisetas</li>
-              <li>Calças</li>
-              <li>Bonés</li>
-              <li>Headphones</li>
-              <li>Tênis</li>
+              <li className="mb-3">Camisetas</li>
+              <li className="mb-3">Calças</li>
+              <li className="mb-3">Bonés</li>
+              <li className="mb-3">Headphones</li>
+              <li className="mb-3">Tênis</li>
             </ul>
           </div>
-          <div id="contact" className="w-2 m-2">
+          <div id="contact" className="w-2 m-4">
             <h3>Contato</h3>
             <p>
               <a
