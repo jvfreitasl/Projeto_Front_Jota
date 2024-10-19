@@ -2,24 +2,27 @@ import imagem from "../assets/Layer 1aa 2.png";
 import produtos from "../data/produtos.json";
 
 const ProductListing = () => {
-  return ( 
+  return (
     <>
-      <section>
+      <section style={{ backgroundColor: "#FFFFFF" }} className="w-7">
         <ul className="grid list-none p-0">
           {produtos.produtos.map((produto) => (
-            <li key={produto.id} className="col-12 md:col-3">
-              <div className="shadow-4 p-3 border-round-md">
+            <li key={produto.id} className="col-12 md:col-4">
+              <div className="shadow-3 p-3 border-round-md">
                 <div className="relative">
                   <img
                     className="w-full"
-                    style={{ height: "300px", objectFit: "contain" }}
+                    style={{ objectFit: "contain" }}
                     src={imagem}
                     alt={produto.titulo}
                   />
-                  {/* <h6 className="absolute top-0 right-0 bg-primary py-1 px-3 border-round-md">
-                      {product.rating.rate}
-                    </h6> */}
+                  {(produto.id === 1 || produto.id === 2) && (
+                    <h6 style={{ backgroundColor: "#E7FF86" }} className="absolute top-0 left-0 py-1 px-3 border-round-3xl">
+                      {produto.descontoPorcento}
+                    </h6>
+                  )}
                 </div>
+                <h4 style={{ opacity: 0.4 }}>{produto.categoria}</h4>
                 <h3 className="mb-0 text-overflow-ellipsis white-space-nowrap overflow-hidden">
                   {produto.titulo}
                 </h3>
@@ -35,7 +38,7 @@ const ProductListing = () => {
         </ul>
       </section>
     </>
-   );
-}
- 
+  );
+};
+
 export default ProductListing;
