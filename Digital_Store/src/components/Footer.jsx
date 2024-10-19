@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <footer style={{ backgroundColor: "#1F1F1F" }} className="w-full">
-        <section className="flex justify-content-evenly text-white w-full">
-          <div id="school" className="p-3 w-2 m-4">
+        <section className="flex justify-content-between text-white w-full">
+          <div id="school" className="p-3 w-2 m-4 mx-7">
             <div className="flex align-items-center pl-2">
               <img
                 style={{ height: "22px", width: "22px" }}
@@ -45,7 +45,7 @@ const Footer = () => {
               <li className="mb-3 cursor-pointer">Tênis</li>
             </ul>
           </div>
-          <div id="contact" className="w-2 m-4">
+          <div id="contact" className="w-2 m-4 mx-7">
             <h3>Contato</h3>
             <p>
               <a

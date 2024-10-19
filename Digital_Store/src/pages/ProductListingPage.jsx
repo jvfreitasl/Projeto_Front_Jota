@@ -1,9 +1,14 @@
-const ProductsList = () => {
+import ProductListing from "../components/ProductListing";
+
+const ProductListingPage = () => {
   return (
     <>
-      <h1>Produtos</h1>
+      {/* Header */}
+
+      <ProductListing />
+
+      {/* Footer */}
     </>
   );
 };
-
-export default ProductsList;
+export default ProductListingPage;
